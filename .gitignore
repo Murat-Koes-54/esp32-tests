@@ -1,0 +1,6 @@
+.vscode
+build
+sdkconfig.old
+
+# MacOS directory files
+.DS_Store

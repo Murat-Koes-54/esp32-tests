@@ -1,0 +1,19 @@
+{
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.renderWhitespace": "all",
+    "editor.rulers": [
+        { "column": 0, "color": "#5a5a5a80" },
+        { "column": 4, "color": "#5a5a5a80" },
+        { "column": 8, "color": "#5a5a5a80" },
+        { "column": 12, "color": "#5a5a5a80" },
+        { "column": 16, "color": "#5a5a5a80" },
+        { "column": 20, "color": "#5a5a5a80" },
+        { "column": 24, "color": "#5a5a5a80" },
+        { "column": 60, "color": "#5a5a5a80" },
+        { "column": 80, "color": "#eeff0020" },
+        { "column": 100, "color": "#08e72620" },
+        { "column": 120, "color": "#ff000020" },
+    ],
+    "files.encoding": "utf8",
+}
