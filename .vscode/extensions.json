@@ -1,0 +1,17 @@
+{
+    "recommendations": [
+        "akamud.vscode-theme-onedark",
+        "eamodio.gitlens",
+        "EditorConfig.EditorConfig",
+        "esbenp.prettier-vscode",
+        "ms-python.python",
+        "ms-vscode.cmake-tools",
+        "ms-vscode.cpptools",
+        "ms-vscode.hexeditor",
+        "ms-vscode.makefile-tools",
+        "redhat.vscode-xml",
+        "redhat.vscode-yaml",
+        "xaver.clang-format",
+    ],
+    "unwantedRecommendations": []
+}
