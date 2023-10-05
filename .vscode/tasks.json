@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Helper build",
+            "type": "shell",
+            "command": "mkdir -p build && cd build",
+            "presentation": {
+                "reveal": "never",
+                "clear": true,
+                "close": true
+            }
+        }
+    ]
+}
