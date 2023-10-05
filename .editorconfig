@@ -10,3 +10,124 @@ end_of_line = lf
 charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
+
+# Assembly.
+[*.S]
+indent_size = 4
+indent_style = tab
+
+# C.
+[*.{c,h}]
+indent_size = 4
+indent_style = space
+
+# C++.
+[*.{cpp,cxx,hpp,hxx}]
+indent_size = 4
+indent_style = space
+
+# CMake.
+[{CMakeLists.txt,*.cmake,*.cmake-format}]
+indent_size = 4
+indent_style = space
+max_line_length = 120
+
+# Device tree.
+[*.{dts,dtsi,overlay}]
+indent_size = 4
+indent_style = tab
+
+# Dockerfile.
+[Dockerfile]
+indent_size = 2
+
+# FreeRTOS.
+[*/freertos/**]
+indent_size = 4
+indent_style = tab
+
+# FreeRTOS config.
+[{*/freertos/**.S,**/FreeRTOSConfig.h}]
+indent_size = 4
+indent_style = space
+
+# Git commit messages.
+[{COMMIT_EDITMSG,git-revise-todo}]
+max_line_length = 80
+
+# Gitlint.
+[*.gitlint]
+indent_size = 4
+insert_final_newline = false
+
+# INI File.
+[*.ini]
+indent_size = 2
+
+[*.json]
+indent_size = 4
+indent_style = space
+insert_final_newline = false
+
+# Kconfig.
+[Kconfig*]
+indent_size = 4
+indent_style = tab
+
+# Key (Certificate).
+[*.pem]
+insert_final_newline = false
+
+# Linker Script.
+[*.ld]
+indent_size = 4
+indent_style = space
+
+# Makefile.
+[{Makefile,*.mk,*.bat,*.in}]
+indent_size = 4
+indent_style = tab
+
+# Markdown, reStructuredText.
+[*.{md,rst,Rmd}]
+indent_size = 2
+indent_style = space
+max_line_length = off
+trim_trailing_whitespace = false
+
+# Perl.
+[*.pl]
+indent_size = 4
+indent_style = space
+
+# Python, Java.
+[*.{py,java,r,R}]
+indent_size = 4
+indent_style = space
+
+# Shell Script.
+[*.{sh,ac}]
+indent_size = 2
+indent_style = space
+shell_variant = bash
+switch_case_indent = true
+
+# TypeScript.
+[*.ts]
+quote_type = single
+
+# Valgrind Suppression File.
+[*.supp]
+indent_size = 3
+indent_style = space
+
+# Windows Command Script.
+[*.cmd]
+end_of_line = crlf
+indent_size = 4
+indent_style = tab
+
+# YAML.
+[*.{yml,yaml}]
+indent_size = 2
+indent_style = space
