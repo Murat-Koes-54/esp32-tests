@@ -1,4 +1,8 @@
 {
+    "workbench.colorTheme": "Atom One Dark",
+    "workbench.productIconTheme": "fluent-icons",
+    "telemetry.telemetryLevel": "off",
+    "enable-crash-reporter": false,
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
     "editor.renderWhitespace": "all",
@@ -16,4 +20,27 @@
         { "column": 120, "color": "#ff000020" },
     ],
     "files.encoding": "utf8",
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 30000,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true
+    },
+    "diffEditor.renderSideBySide": true,
+    "clang-format.style": "file",
+    "clang-format.executable": "clang-format",
+    "clang-format.language.c.enable": true,
+    "[c]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+    "[cpp]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+    "git.enabled": true
 }

@@ -1,6 +1,6 @@
 /**
  * @file main.c
- * @brief ...
+ * @brief Unit Testing of AIRCOMM Module.
  */
 
 /*
@@ -10,22 +10,24 @@
  * found in the file LICENSE in this distribution.
  */
 
-#include <stddef.h>
-#include <stdint.h>
 #include <stdbool.h>
+#include <stdio.h>
 
-#include "freertos/FreeRTOS.h"
-#include "freertos/task.h"
+#include "nvs_flash.h"
 
-#include "esp_log.h"
+#include "aircomm.h"
 
-static const char *TAG = "unit_test";
-
-void app_main(void)
-{
-    while (1) {
-        ESP_LOGI(TAG, "unit testing...");
-
-        vTaskDelay(10000 / portTICK_PERIOD_MS);
+void app_main( ) {
+    /* Initialize nvs flash prepare for Wi-Fi. */
+    esp_err_t retCode = nvs_flash_init( );
+    if ( ( retCode == ESP_ERR_NVS_NO_FREE_PAGES ) || ( retCode == ESP_ERR_NVS_NEW_VERSION_FOUND ) ) {
+        ESP_ERROR_CHECK( nvs_flash_erase( ) );
+        retCode = nvs_flash_init( );
     }
+    ESP_ERROR_CHECK( retCode );
+
+    /* Launch the system task. */
+    aircomm_launch( );
+
+    __unreachable( );
 }
