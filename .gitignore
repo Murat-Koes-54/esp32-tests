@@ -1,6 +1,7 @@
 build
 sdkconfig.old
 managed_components
+.venv
 
 # MacOS directory files
 .DS_Store
